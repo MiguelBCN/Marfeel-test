@@ -1,0 +1,93 @@
+@import "reset";
+@import "variables";
+#cuerpo-principal {
+  background: $background;
+  width: 100%;
+  min-height: 100%;
+}
+#cuerpo-secundario {
+  width: 70%;
+  position: relative;
+  margin: auto;
+  top: 50px;
+  bottom: 50px;
+  background: lighten($background, 5);
+  border-radius: 20px;
+  box-shadow: 3px 9px 15px 3px rgba(89, 86, 89, 1);
+}
+#search-nav {
+  padding: 20px 10px;
+  display: flex;
+  input {
+    border-color: darken($background, 2);
+    flex-grow: 2;
+    margin-right: 10px;
+  }
+  button {
+    background: rgba(226, 226, 226, 1);
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+#result-search {
+  padding: 20px;
+  background: $background-result;
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+    border-top: solid darken($background-result, 5) 1px;
+    cursor: pointer;
+    color: rgb(26, 126, 160);
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+      color: darken(rgb(26, 126, 160), 5);
+    }
+  }
+  .bio-user {
+    display: flex;
+    flex: row wrap;
+    height: 140px;
+    .user-avatar {
+      padding-right: 20px;
+      img {
+        height: 100%;
+      }
+    }
+    .user-info {
+      padding: 5px;
+      .user-alias {
+      }
+      .user-name {
+        font-size: 30px;
+        font-weight: 900;
+      }
+      .user-bio {
+      }
+    }
+  }
+  .repos-user {
+    .repo-user {
+      display: flex;
+      flex: row nowrap;
+      border-top: solid rgb(177, 172, 172) 1px;
+      div:nth-child(1) {
+        flex-grow: 2;
+        padding: 5px;
+      }
+      div:nth-child(2) {
+        padding: 5px;
+      }
+    }
+  }
+  .error-search {
+    color: darken($error-search, 5);
+    background: $error-search;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid darken($error-search, 2) 1px;
+  }
+}

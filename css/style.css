@@ -1,0 +1,117 @@
+body {
+  font-family: arial;
+  background: #f8f9fb; }
+
+html,
+body,
+ul,
+ol,
+li,
+form,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0; }
+
+fieldset,
+img {
+  border: 0; }
+
+li {
+  list-style: none; }
+
+#cuerpo-principal {
+  background: #f0f0f0;
+  width: 100%;
+  min-height: 100%; }
+
+#cuerpo-secundario {
+  width: 70%;
+  position: relative;
+  margin: auto;
+  top: 50px;
+  bottom: 50px;
+  background: #fdfdfd;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 9px 15px 3px #595659;
+  box-shadow: 3px 9px 15px 3px #595659; }
+
+#search-nav {
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #search-nav input {
+    border-color: #ebebeb;
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    margin-right: 10px; }
+  #search-nav button {
+    background: #e2e2e2;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px; }
+
+#result-search {
+  padding: 20px;
+  background: white; }
+  #result-search p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+    border-top: solid #f2f2f2 1px;
+    cursor: pointer;
+    color: #1a7ea0;
+    text-decoration: underline; }
+    #result-search p:hover {
+      text-decoration: none;
+      color: #166d8a; }
+  #result-search .bio-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: row;
+    -ms-flex: row wrap;
+    flex: row wrap;
+    height: 140px; }
+    #result-search .bio-user .user-avatar {
+      padding-right: 20px; }
+      #result-search .bio-user .user-avatar img {
+        height: 100%; }
+    #result-search .bio-user .user-info {
+      padding: 5px; }
+      #result-search .bio-user .user-info .user-name {
+        font-size: 30px;
+        font-weight: 900; }
+  #result-search .repos-user .repo-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: row;
+    -ms-flex: row nowrap;
+    flex: row nowrap;
+    border-top: solid #b1acac 1px; }
+    #result-search .repos-user .repo-user div:nth-child(1) {
+      -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+      flex-grow: 2;
+      padding: 5px; }
+    #result-search .repos-user .repo-user div:nth-child(2) {
+      padding: 5px; }
+  #result-search .error-search {
+    color: #ed9999;
+    background: #f1afaf;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid #efa6a6 1px; }
